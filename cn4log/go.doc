@@ -1,0 +1,15 @@
+/*
+Package cn4log exposes an API to log your work.
+
+first, instanitiate a logger with cn4log.New, and giving it a threshold level.
+Messages of lesser criticality won't be logged.
+
+Sharing the logger is the responsebility of the caller.
+
+The logger can be called to log messages on four levels:
+    - Debug: mostly used to debug code, follow step-by-step processes
+    - Info: valuable messages providing insights to the milestones of a processes
+    - Warn: critical status that still can be handled by the processes
+    - Error: error messages to understand what went wrong
+*/
+package cn4log
